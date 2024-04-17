@@ -104,7 +104,7 @@ button:hover {
 }
 
 .modal-content p {
-    color: #333333; /* Texto más oscuro para mejor legibilidad */
+    color: #212121; /* Texto más oscuro para mejor legibilidad */
 }
 
 @media (max-width: 600px) {
