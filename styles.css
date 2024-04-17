@@ -68,7 +68,7 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 1em; /* Ajuste para mejorar la accesibilidad en dispositivos móviles */
+    font-size: 1em;
 }
 
 button:hover {
@@ -94,9 +94,17 @@ button:hover {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 90%; /* Ajustado para mejor visualización en móviles */
+    width: 90%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     text-align: center;
+}
+
+.modal-content h2 {
+    color: #ff0000; /* Título en rojo */
+}
+
+.modal-content p {
+    color: #333333; /* Texto más oscuro para mejor legibilidad */
 }
 
 @media (max-width: 600px) {
@@ -109,7 +117,7 @@ button:hover {
     }
 
     .modal-content {
-        width: 80%; /* Menor ancho para evitar problemas de desbordamiento */
-        padding: 15px; /* Espaciado interior optimizado */
+        width: 80%;
+        padding: 15px;
     }
 }
