@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ubicación de la Pista</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Ubicación de la Pista</h1>
+    <p>La próxima pista se encuentra en las catacumbas bajo París.</p>
+    <section id="crime-syndicate-chat">
+        <h2>Chat del Sindicato</h2>
+        <div id="chatWindow" class="chat-window">
+            <p><span class="chat-name">Lex Luthor:</span> ¿Alguien tiene el último informe de la Liga de la Justicia?</p>
+            <p><span class="chat-name">Joker:</span> ¡Acabo de enviar a Batman en una "pequeña" persecución por Gotham! 🃏</p>
+        </div>
+        <input type="text" id="chatInput" placeholder="Escribe tu mensaje..." onkeypress="sendMessage(event)">
+        <button onclick="sendMessage()">Enviar</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
