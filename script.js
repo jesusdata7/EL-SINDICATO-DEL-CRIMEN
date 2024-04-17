@@ -1,4 +1,4 @@
-const eventTime = new Date("2024-05-03T19:30:00").getTime();
+const eventTime = new Date("2024-04-17T19:00:00").getTime(); // Asegúrate de ajustar esta fecha y hora al evento
 
 const countdownFunction = setInterval(function() {
     const now = new Date().getTime();
@@ -8,17 +8,18 @@ const countdownFunction = setInterval(function() {
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
 
     if (distance < 0) {
         clearInterval(countdownFunction);
-        document.getElementById("countdown").innerHTML = "¡El evento ha comenzado!";
+        document.getElementById("countdown").innerHTML = "La clave de acceso al chat es: 1234"; // Asegúrate de ajustar este mensaje y la clave como consideres apropiado
     }
 }, 1000);
 
 function checkPassword() {
     const passwordInput = document.getElementById("password").value;
-    const secretPassword = "contraseña123";
+    const secretPassword = "La contraseña es TONTOQUIENLOLEA"; // Asegúrate de que esto coincida con el mensaje revelado
 
     if (passwordInput === secretPassword) {
         window.location.href = 'pista.html';
