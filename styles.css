@@ -65,3 +65,12 @@ button {
 button:hover {
     background-color: #666;
 }
+
+.crime-news a {
+    color: #ff4444; /* Mantener el color rojo para los títulos */
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+.crime-news a:hover {
+    text-decoration: underline; /* Agregar subrayado al pasar el ratón */
+}
