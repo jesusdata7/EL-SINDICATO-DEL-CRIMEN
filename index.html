@@ -8,27 +8,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="container">
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <h2>Términos y Condiciones del sindicato del crimen</h2>
+            <p>Antes de acceder a esta web, tienes que estar de acuerdo con todos los valores que que representa el sindicato del crimen. Te haría leertelos, pero soy soy tan malo. Solo te digo que ten cuidado, porque la web esconde muchos misterios, todo es cuestión de buscar bien.</p>
+            <button onclick="acceptTerms()">SOY UN VILLANO, ¡¡AMO AL JOKER!!</button>
+        </div>
+    </div>
+
+    <div class="container" style="display: none;">
         <div class="content">
             <header>
                 <h1>SINDICATO DEL CRÍMEN</h1>
             </header>
-            <h2>La web será eliminada en:</h2>
+            <h2>Os queda</h2>
             <div id="countdown"></div>
             <section id="villain-news">
                 <h2>Últimos crímenes</h2>
                 <div class="crime-news">
-                    <article><a href="noticia1.html">
-                        <h3>Caos en Gotham</h3>
-                        <p>Joker libera una nueva toxina que convierte a los ciudadanos en zombis sonrientes.</p></a>
+                    <article>
+                        <h3><a href="caos-en-gotham.html">Caos en Gotham</a></h3>
+                        <p>Joker libera una nueva toxina que convierte a los ciudadanos en zombis sonrientes.</p>
                     </article>
-                    <article><a href="noticia1.html">
-                        <h3>Invasión de Apokolips</h3></a>
+                    <article>
+                        <h3><a href="invasion-de-apokolips.html">Invasión de Apokolips</a></h3>
                         <p>Darkseid conquista otra dimensión en su búsqueda incansable de la Ecuación Anti-Vida.</p>
                     </article>
-                    <article><a href="noticia1.html"></a>
-                        <h3>Subterfugio Tecnológico</h3>
-                        <p>Lex Luthor hackea las comunicaciones globales de la Liga de la Justicia.</a></p>
+                    <article>
+                        <h3><a href="subterfugio-tecnologico.html">Subterfugio Tecnológico</a></h3>
+                        <p>Lex Luthor hackea las comunicaciones globales de la Liga de la Justicia.</p>
                     </article>
                 </div>
             </section>
@@ -38,6 +46,7 @@
             </form>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
