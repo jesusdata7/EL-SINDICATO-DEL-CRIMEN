@@ -1,4 +1,4 @@
-const eventTime = new Date("2024-04-30T15:00:00").getTime(); // Ajusta la fecha y hora
+const eventTime = new Date("2024-05-03T19:30:00").getTime();
 
 const countdownFunction = setInterval(function() {
     const now = new Date().getTime();
@@ -8,8 +8,7 @@ const countdownFunction = setInterval(function() {
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
     if (distance < 0) {
         clearInterval(countdownFunction);
@@ -22,7 +21,7 @@ function checkPassword() {
     const secretPassword = "contraseña123";
 
     if (passwordInput === secretPassword) {
-        window.location.href = 'pista.html'; // Redirecciona a la página de la pista
+        window.location.href = 'pista.html';
     } else {
         alert("Contraseña incorrecta.");
     }
