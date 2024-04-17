@@ -1,4 +1,4 @@
-const eventTime = new Date("2024-04-17T19:00:00").getTime(); // Asegúrate de ajustar esta fecha y hora al evento
+const eventTime = new Date("2024-04-17T19:20:00").getTime(); // Asegúrate de ajustar esta fecha y hora al evento
 
 const countdownFunction = setInterval(function() {
     const now = new Date().getTime();
@@ -24,6 +24,18 @@ function checkPassword() {
     if (passwordInput === secretPassword) {
         window.location.href = 'pista.html';
     } else {
-        alert("Contraseña incorrecta.");
+        alert("Contraseña incorrecta paqueteheroe, pringado, fuera de aquí.");
     }
+}
+
+window.onload = function() {
+    const termsModal = document.getElementById('termsModal');
+    const contentContainer = document.querySelector('.container');
+
+    function acceptTerms() {
+        termsModal.style.display = 'none';
+        contentContainer.style.display = 'block';
+    }
+
+    window.acceptTerms = acceptTerms; // Hacer la función accesible globalmente para ser llamada desde el HTML
 }
