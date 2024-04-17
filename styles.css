@@ -68,7 +68,8 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.25em; /* Increased for better readability on mobile */
+    padding: 15px 30px;
 }
 
 button:hover {
@@ -100,13 +101,13 @@ button:hover {
 }
 
 .modal-content h2 {
-    color: #ff0000; /* Título en rojo */
+    color: #ff0000;
 }
 
 .modal-content p {
     color: #212121;
-    text-align: justify; /* Ajusta el texto para que esté justificado */
-    font-family: Arial, sans-serif; /* Cambia la fuente para mejorar la legibilidad */
+    text-align: justify;
+    font-family: Arial, sans-serif;
 }
 
 @media (max-width: 600px) {
