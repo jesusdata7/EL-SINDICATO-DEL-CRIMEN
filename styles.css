@@ -104,7 +104,9 @@ button:hover {
 }
 
 .modal-content p {
-    color: #212121; /* Texto más oscuro para mejor legibilidad */
+    color: #212121;
+    text-align: justify; /* Ajusta el texto para que esté justificado */
+    font-family: Arial, sans-serif; /* Cambia la fuente para mejorar la legibilidad */
 }
 
 @media (max-width: 600px) {
