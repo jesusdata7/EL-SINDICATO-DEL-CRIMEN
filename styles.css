@@ -73,7 +73,7 @@ button:hover {
     background-color: #666;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     body, .container {
         padding: 10px;
         flex-direction: column;
